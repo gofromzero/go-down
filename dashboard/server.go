@@ -22,6 +22,7 @@ func Server(addr string) {
 	}
 
 	go func() {
+
 		if err := s.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 			log.Fatalf("s.ListenAndServe err: %v", err)
 		}

@@ -13,3 +13,8 @@ Now try to improve it by adding and enhancing it step by step.
 - Goroutine to manage multiple connections and writing on the dist at the same time
 - Work with CLI I/O to parse input arguments and show a proper progress bar
 - Work with web-related functions/libraries to create a web interface
+
+
+
+## 参考文章
+- [golang实现简单下载器](https://blog.csdn.net/a1053904672/article/details/90745906)

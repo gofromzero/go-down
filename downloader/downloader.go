@@ -1,6 +1,6 @@
 package downloader
 
-func Download() error {
+func Download(url string) error {
 
 	return nil
 }

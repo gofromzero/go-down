@@ -15,8 +15,19 @@ limitations under the License.
 */
 package main
 
-import "github.com/gofromzero/go-down/cmd"
+import (
+	"github.com/gofromzero/go-down/bar"
+	"github.com/gofromzero/go-down/cmd"
+	"time"
+)
 
 func main() {
+	var bar bar.Bar
+	bar.NewOption(0, 100)
+	for i := 0; i <= 100; i++ {
+		time.Sleep(100 * time.Millisecond)
+		bar.Play(int64(i))
+	}
+	bar.Finish()
 	cmd.Execute()
 }
